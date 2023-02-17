@@ -1,13 +1,13 @@
 // Функция которая изменяет цвет исходя из атрибута value у option
-function changeBackground(selectColor) {
-    document.body.style.background = selectColor;
+function changeBackground(event) {
+    document.body.style.background = colors;
 }
  
 function changeColor(event) {
-    document.body.style.color = "yellow";
+    document.body.style.color = colors;
 }
 // Сюда пишите название события, которое должно произойти после смены option
-const selectColorEvent = '';
+const selectColorEvent = 'selectColor';
 // Создаем события на тег select.
 selectColor.addEventListener(selectColorEvent, changeColor);
 // Напишите, почему событие делаем на тег select, а работаем с тегом option?
